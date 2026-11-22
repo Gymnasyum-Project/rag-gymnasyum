@@ -1,0 +1,21 @@
+# Environment variables (API Keys & Secrets)
+.env
+.env.local
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Vector database lokal (hasil generate dari folder pdf/)
+chroma_db/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/

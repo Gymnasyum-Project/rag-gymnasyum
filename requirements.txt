@@ -1,0 +1,16 @@
+# RAG service — Gymnasyum (hanya RAG)
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.0.0
+python-dotenv>=1.0.1
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+pymupdf>=1.23.0
+transformers>=4.40.0
+accelerate>=0.30.0
+bitsandbytes>=0.43.0
+torch>=2.0.0
+groq>=0.11.0
+# Catatan: torch + bitsandbytes 4-bit butuh GPU (disarankan T4, 3,2 GB VRAM
+# untuk Qwen2.5-3B-Instruct 4-bit di percobaan asli). Di CPU tetap bisa
+# jalan tapi 1 jawaban akan jauh lebih lambat dari 48 detik.
