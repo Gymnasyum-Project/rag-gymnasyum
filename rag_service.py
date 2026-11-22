@@ -168,7 +168,7 @@ def _load_llm():
     return _groq_client
 
 
-def generate(messages, max_new_tokens=1200):
+def generate(messages, max_new_tokens=2000):
     client = _load_llm()
     model_name = os.environ.get("GROQ_MODEL") or LLM_MODEL
     chat_completion = client.chat.completions.create(
